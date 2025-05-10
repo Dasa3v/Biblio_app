@@ -1,0 +1,78 @@
+/* Estilos base */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1 0 auto;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+/* ---------------------------------- */
+/* Estilos específicos del footer */
+/* ---------------------------------- */
+footer {
+  flex-shrink: 0;
+  background-color: #343a40; /* Color oscuro de Bootstrap */
+  color: white;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+footer h5 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+footer .social-links a {
+  font-size: 1.25rem;
+  transition: opacity 0.3s ease;
+}
+
+footer .social-links a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+footer hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------------------------------- */
+/* Mantenemos tus otros estilos */
+/* ---------------------------------- */
+.navbar {
+  padding: 0.75rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-card {
+  transition: all 0.3s ease;
+}
+
+.btn {
+  border-radius: 0.375rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  footer .col-md-4 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+  }
+  
+  footer .social-links {
+      justify-content: center;
+  }
+}

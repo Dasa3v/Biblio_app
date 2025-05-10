@@ -1,0 +1,32 @@
+<!-- Metadatos esenciales -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta name="description" content="Sistema de gestión de colección de libros">
+
+<!-- Favicon (multiformato) -->
+<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+<link rel="shortcut icon" href="/public/img/logo.png" type="image/png">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+
+<!-- CSS personalizado (con precarga) -->
+<link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+
+<!-- Estilos críticos SOLO para elementos iniciales -->
+<style>
+  /* Solo para contenido visible inmediatamente */
+  .initial-load {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+</style>
